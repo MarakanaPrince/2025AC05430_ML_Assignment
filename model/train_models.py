@@ -42,6 +42,8 @@ models = {
 os.makedirs(".", exist_ok = True)
 results = []
 
+print(X_train.columns.tolist())
+
 for name, model in models.items():
     model.fit(X_train_scalled, y_train)
     preds = model.predict(X_test_scalled)

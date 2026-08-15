@@ -16,31 +16,32 @@ def drop_cols(df, drop_cols):
     cols_to_drop = [c for c in drop_cols if c in df.columns]
     return df.drop(columns = cols_to_drop)
 
-monday = pd.read_csv("../data/Monday-WorkingHours.pcap_ISCX.csv")
+# monday = pd.read_csv("../data/Monday-WorkingHours.pcap_ISCX.csv")
 friday = pd.read_csv("../data/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv")
 
-print(f"Monday data shape: {monday.shape}", f"Friday data shape: {friday.shape}")
+# print(f"Monday data shape: {monday.shape}")
+print(f"Friday data shape: {friday.shape}")
 
-monday.columns = monday.columns.str.strip()
+# monday.columns = monday.columns.str.strip()
 friday.columns = friday.columns.str.strip()
 
-print("Monday Labels:", monday["Label"].unique())
+# print("Monday Labels:", monday["Label"].unique())
 print("Friday Labels:", friday["Label"].unique())
 
-monday["Target"] = (monday["Label"] != "BENIGN").astype(int)
+# monday["Target"] = (monday["Label"] != "BENIGN").astype(int)
 friday["Target"] = (friday["Label"] != "BENIGN").astype(int)
 
-monday = clean_inf_nan(monday)
+# monday = clean_inf_nan(monday)
 friday = clean_inf_nan(friday)
 
-drop_cls = ["Flow ID", "Source IP", " Source IP", "Src IP",
+drop_cls = ["Destination Port", "Flow ID", "Source IP", " Source IP", "Src IP",
              "Destination IP", " Destination IP", "Dst IP",
              "Timestamp", " Timestamp", "Label"]
 
-monday = drop_cols(monday, drop_cls)
+# monday = drop_cols(monday, drop_cls)
 friday = drop_cols(friday, drop_cls)
 
-benign_sample = monday[monday["Target"] == 0].sample(n = 600, random_state = RANDOM_SEED)
+benign_sample = friday[friday["Target"] == 0].sample(n = 600, random_state = RANDOM_SEED)
 attack_sample = friday[friday["Target"] == 1].sample(n = 400, random_state = RANDOM_SEED)
 
 print("Benign sample shape:", benign_sample.shape)
