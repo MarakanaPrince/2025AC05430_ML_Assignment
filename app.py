@@ -101,7 +101,7 @@ with st.sidebar:
     st.markdown("### 🧭 Navigate")
     page = st.radio(
         "Choose a view",
-        ["🎯 Model Results", "📊 Data Overview", "📈 Compare All Models"],
+        ["📊 Data Overview", "🎯 Model Results",  "📈 Compare All Models"],
         label_visibility="collapsed",
     )
 
