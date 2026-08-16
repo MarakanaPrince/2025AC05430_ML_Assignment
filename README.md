@@ -53,7 +53,7 @@ https://github.com/MarakanaPrince/2025AC05430_ML_Assignment
 | Random Forest (Ensemble) | Highest AUC. Shows best overall ranking and separation between classes                                                                 |
 | **Overall Winner for your dataset?** | Decision Tree achieved the highest accuracy and MCC thus is the winner and Random Forest is the second as it is robut to un-seen data. |
 ## Live App
-https://2025ac05430mlassignment2.streamlit.app/
+https://2025ac05430mlassignment2.streamlit.app
 
 ## Dataset License & Citation
 
