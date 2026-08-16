@@ -23,7 +23,7 @@ Industrial control and safety systems in the oil and gas sector — SCADA networ
 ## Dataset Description
 
 - <b>Source:</b> CIC-IDS-2017 (Canadian Institute for Cybersecurity), MachineLearningCSV
-- <b>Files used:</b> Monday-WorkingHours (benign traffic), Friday-Afternoon-DDoS (attack traffic)
+- <b>Files used:</b> Thursday-WorkingHours-Morning-WebAttacks(Benign and Attack)
 - <b>Sampling:</b> 1000-row stratified sample — 600 BENIGN / 400 ATTACK — drawn to keep
   the assignment lightweight while preserving meaningful class balance
 - <b>Features:</b> 78 flow-based features (duration, packet counts, byte rates, etc.)
