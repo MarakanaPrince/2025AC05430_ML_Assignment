@@ -55,4 +55,19 @@ Industrial control and safety systems in the oil and gas sector — SCADA networ
 ## Live App
 [Fill after seeing the results]
 
+## Dataset License & Citation
+
+The CIC-IDS-2017 dataset consists of labeled network flows, including full 
+packet payloads in pcap format, corresponding profiles, and labeled flows, 
+publicly available for research use.
+
+Citation:
+
+> Iman Sharafaldin, Arash Habibi Lashkari, and Ali A. Ghorbani, "Toward 
+> Generating a New Intrusion Detection Dataset and Intrusion Traffic 
+> Characterization", 4th International Conference on Information Systems 
+> Security and Privacy (ICISSP), Portugal, January 2018.
+
+Dataset source: [Canadian Institute for Cybersecurity — CIC-IDS-2017](https://www.unb.ca/cic/datasets/ids-2017.html)
+
 </div>
