@@ -31,7 +31,7 @@ Industrial control and safety systems in the oil and gas sector — SCADA networ
 - <b>Train/test split:</b> 800/200, stratified
 
 ## GitHub Repository
-[Fill after seeing the results]
+https://github.com/MarakanaPrince/2025AC05430_ML_Assignment
 ## Models Used
 
 | ML Model Name | Accuracy | AUC    | Precision | Recall | F1     | MCC    |
