@@ -18,7 +18,7 @@ M.Tech. Artificial Intelligence/Machine Learning
 # Network Intrusion Detection (CIC-IDS-2017)
 
 ## Problem Statement
-Industrial control and safety systems in the oil and gas sector — SCADA networks, DCS, and Safety Instrumented Systems (SIS) — are increasingly connected to corporate IT infrastructure, exposing them to network-based cyber threats such as Web Attacks (Brute Force, XSS, SQL Injection) and port scanning that can degrade the availability and integrity of safety-critical monitoring.This assignment addresses the underlying classification problem: given flow-level network traffic features, can a machine learning model reliably distinguish benign traffic from attack traffic in real time? Using the CIC-IDS-2017 dataset, this project implements and compares five classification algorithms to evaluate which approach offers the most reliable detection performance for this binary classification task, with an interactive Streamlit application to demonstrate model behavior on unseen test data.
+Industrial control and safety systems in the oil and gas sector — SCADA networks, DCS, and Safety Instrumented Systems (SIS) — are increasingly connected to corporate IT infrastructure, exposing them to network-based cyber threats such as Web Attacks (Brute Force, XSS, SQL Injection) and port scanning that can degrade the availability and integrity of safety-critical monitoring.This assignment addresses the underlying classification problem: given flow-level network traffic features, can a machine learning model reliably distinguish benign traffic from attack traffic in real time? Using the CIC-IDS-2017 dataset, this project implements and compares five classification algorithms to evaluate which approach offers the most reliable detection performance for this binary classification task, with an interactive Streamlit application to demonstrate model behaviuor on unseen test data.
 
 ## Dataset Description
 
@@ -44,21 +44,21 @@ https://github.com/MarakanaPrince/2025AC05430_ML_Assignment
 
 ## Observations
 
-| ML Model Name | Observation about model performance                                                                                                    |
-|---|----------------------------------------------------------------------------------------------------------------------------------------|
-| Logistic Regression | Trails slightly Web attack traffic patterns are likely not linearly seperable.                                                         |
-| Decision Tree | Precision 1 and lower recall says its conservative ocassionally missing real attacks                                                   |
-| kNN | Close to Decision Tree. Scalled flow feature separates classes                                                                         |
-| Naive Bayes | Lowest precision. As features are not independent as seen in correlation matrix.                                                       |
-| Random Forest (Ensemble) | Highest AUC. Shows best overall ranking and separation between classes                                                                 |
-| **Overall Winner for your dataset?** | Decision Tree achieved the highest accuracy and MCC thus is the winner and Random Forest is the second as it is robut to un-seen data. |
+| ML Model Name | Observation about model performance                                                                                                     |
+|---|-----------------------------------------------------------------------------------------------------------------------------------------|
+| Logistic Regression | Trails slightly Web attack traffic patterns are likely not linearly separable.                                                          |
+| Decision Tree | Precision 1 and lower recall say its conservative occasionally missing real attacks                                                     |
+| kNN | Close to Decision Tree. Scaled flow feature separates classes                                                                           |
+| Naive Bayes | Lowest precision. As features are not independent as seen in correlation matrix.                                                        |
+| Random Forest (Ensemble) | Highest AUC. Shows best overall ranking and separation between classes                                                                  |
+| **Overall Winner for your dataset?** | Decision Tree achieved the highest accuracy and MCC thus is the winner and Random Forest is the second as it is robust to un-seen data. |
 ## Live App
 https://2025ac05430mlassignment2.streamlit.app
 
 ## Dataset License & Citation
 
-The CIC-IDS-2017 dataset consists of labeled network flows, including full 
-packet payloads in pcap format, corresponding profiles, and labeled flows, 
+The CIC-IDS-2017 dataset consists of labelled network flows, including full 
+packet payloads in pcap format, corresponding profiles, and labelled flows, 
 publicly available for research use.
 
 Citation:
