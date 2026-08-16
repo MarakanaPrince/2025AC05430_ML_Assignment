@@ -121,7 +121,9 @@ with st.sidebar:
         text_alignment="justify"
     )
     st.markdown("---")
-    st.caption("BITS Pilani-M.Tech AI/ML-ML Assignment 2", text_alignment="justify")
+    st.caption("Prince A Marakana", text_alignment="center")
+    st.caption("Student ID: 2025AC05430", text_alignment="center")
+    st.caption("M.Tech. Artificial Intelligence/Machine Learning", text_alignment="center")
 
 #Main page
 if uploaded_file is not None:
